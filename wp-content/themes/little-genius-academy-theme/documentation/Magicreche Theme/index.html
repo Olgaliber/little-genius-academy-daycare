@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Magicrehce WordPress Theme Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dist/css/dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Magicrehce by CoffeeCream</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://themeforest.net/user/Coffeecream/portfolio"><span class="glyphicon glyphicon-briefcase"></span> CoffeeCream Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">Installation & Demo Data Import</a></li>
+            <li><a href="#update">Updating a Theme</a></li>
+            <li><a href="#basic-settings">Basic Settings</a></li>
+            <li><a href="#pages">Working With Pages, Slider, Map</a></li>
+            <li><a href="#posts">Blog Posts</a></li>
+            <li><a href="#custom-posts">Staff and Review Post Types</a></li>
+            <li><a href="#pb">Shortcodes</a></li>
+            <li><a href="#cf7">CF7 Contact Forms</a></li>
+            <li><a href="#wpml">Translating and Adding Several Languages</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+<div style="max-width: 960px; margin: 0 auto;">
+
+<br><div class="alert alert-success">
+  <h4 style="margin: 0;">Support: <a href="https://coffeecreamthemes.ticksy.com/">https://coffeecreamthemes.ticksy.com/</a>.</h4>
+</div><br>
+
+          <h1 class="page-header">Magicrehce WordPress Theme Documentation</h1>
+
+
+
+<p>To install this theme you must have a working version of WordPress already installed. For information on installing the WordPress platform, please see the <a href="http://codex.wordpress.org/Installing_WordPress">WordPress Codex</a>.</p>
+
+<div class="alert alert-info">
+  You can install the theme in two ways: through WordPress uploader, or via FTP. If you have trouble installing the theme via Wordpress, please proceed with installing it via FTP and you will be able to get around the issue.
+</div>
+
+<iframe width="960" height="540" src="http://www.youtube.com/embed/R_8PTRQstXU" frameborder="0" allowfullscreen></iframe>
+
+<p>In this <a href="http://www.youtube.com/embed/R_8PTRQstXU">video</a> you will learn how to upload and activate a theme, import demo data, and finish it with setting to have the same site as on demo.</p>
+
+<h3>Installation via WordPress</h3>
+<ol>
+    <li>Navigate to "Appearance &raquo; Themes".</li>
+    <li>Click Install Themes and hit the upload button.</li>
+    <li>Navigate to find the "magicrehce.zip" file on your computer and click "Install Now" button.</li>
+    <li>The theme will be uploaded and installed. <strong>Do not activate this theme.</strong></li>
+    <li>Repeat the same action and upload the "magicrehce-child.zip".</li>
+    <li>Go to "Appearance &raquo; Themes", you will see two almost similiar themes: "Magicrehce" and "Magicrehce Child". <strong>Activate "Magicrehce Child" theme.</strong></li>
+</ol>
+
+<h3>Installation via FTP</h3>
+<ol>
+    <li>Log into your hosting space via an FTP software.</li>
+    <li>Unzip the magicreche.zip and magicreche-child.zip files.</li>
+    <li>Upload the extracted folders into "wp-content &raquo; themes" in your wordpress installation.</li>
+    <li>Activate the newly installed theme. Go to Appearance &raquo; Themes and <strong>activate "Magicreche Child" theme.</strong></li>
+</ol>
+
+<h3>Installing Plugins</h3>
+<p>Theme require and recommends several plugins. Required plugins need to be installed and activated after theme activation - you will see the special message after theme activation. Here is the list of required plugins:</p>
+<ol>
+    <li>WP Post Formats &mdash; allow to create gallery, video and audio posts for portfolio and blog;</li>
+    <li>WP-PageNavi &mdash; archives page pagination.</li>
+</ol>
+<p>Here is the list of optional plugins. Activate them if you need these features:</p>
+<ol>
+  <li>Contact Form 7 &mdash; create contact forms.</li>
+</ol>
+
+<h3>Importing Demo Data</h3>
+<p>We have include the exported XML file from our demo, this allows you to quickly set up your theme the same way our demo is set up.</p>
+
+<p>Follow these steps below to create 1 by 1 demo on your instalation:</p>
+<ol>
+    <li>The XML file is included within the download package at root level in a folder called "Demo Data".</li>
+    <li>Navigate to WP "Admin &raquo; Tools &raquo; Import".</li>
+    <li>Select and install WordPress importer.</li>
+    <li>Once its installed, select the XML file and upload it. It will take a few minutes to install and upload all content
+    Now navigate to WP "Admin &raquo; Appearance &raquo; Menus" page and select menu called "Main Navigation" and assign it to "Main Navigation" location.</li>
+    <li>Next, navigate to WP "Admin &raquo; Settings &raquo; Reading Settings" and set a "Front page: Home" and "Posts page: Blog". Set "Blog pages show at most" option to 4.</li>
+    <li>Go to "Posts &raquo; All Posts" and remove the default WordPress demo post: "Hello world!". Then go to "Pages &raquo; All Pages" and remove the default WordPress demo page: "Sample Page".</li>
+</ol>
+
+
+<br>
+<hr id="update">
+<br>
+<h2>Updating a Theme</h2>
+
+<p>There are two ways to update a theme. First one is manual:</p>
+
+<p><img src="dist/img/update.png" class="img-responsive" alt=""></p>
+
+<ol>
+  <li>Download the latest theme version (see image);</li>
+  <li>Remove the <strong>parent</strong> theme via 'Appearance > Themes' in WP dashboard or via FTP <sup style="color: red; font-weight: bold;">Note!</sup>;</li>
+  <li>Upload a new theme version via 'Appearance > Themes' or FTP.</li>
+</ol>
+
+<div class="alert alert-warning">
+<strong>Note:</strong> you will not loose any posts or pages or other data that entered via WP dashboard. You will only loose modification if you modified the parent files (the theme which you now need to replace). But you never suppose to change parent theme files. If you want to modify any file, for example 'includes/page-title.php', you need to create an 'includes' folder in the child theme folder (which is 'magicreche-child') and copy that file in that folder and then modify it there. Also, remember that you always shoud have a child theme activeted, not parent.
+</div>
+
+<p>Second way is to setup an automatic updates &mdash; please <a href="http://www.wpexplorer.com/envato-wordpress-toolkit-guide/">read this article</a> on how to do that.</p>
+
+
+<br>
+<hr id="basic-settings">
+<br>
+<h2>Basic Settings</h2>
+
+<p>Usually the first step you are doing after theme install is creating a pages like "Home" and "Blog" and assingning then respectively as a home page and posts page in "Settings &raquo; Reading".</p>
+
+<p>Then you have a <strong>Theme Options</strong> panel in the "Appearance" menu section. There are several sections in theme options that allow you to customize the theme to fit your needs. Just walk throught them and you will find what is it all about.</p>
+
+<br>
+<hr id="pages">
+<br>
+<h2>Working With Pages, Slider, Map</h2>
+
+<iframe width="960" height="540" src="http://www.youtube.com/embed/uqITmujkyIs" frameborder="0" allowfullscreen></iframe>
+
+<p>In this <a href="http://www.youtube.com/embed/uqITmujkyIs">video</a> you will learn how to create a single page layout, create and edit slider, section pages with background and map.</p>
+
+<p>There are two types of page templates available - for child pages (section - marked as "Section: &hellip;") and usual page templates (marked as "Single: &hellip;") for the traditional stand alone pages.</p>
+
+<p>To create a single page layout (with child pages as sections) you need first to create a parent page and assign "Homepage" template for it. Then all the child pages you create will go as its sections. You can change the order of these sections by editing the "Order" property (field under template assignment filed).</p>
+
+<p>For each page you have a default set of options available for page with every template:</p>
+
+<ul>
+  <li>Title &mdash; show/hide title;</li>
+  <li>Subtitle &mdash; smaller title under main page title;</li>
+  <li>Separator Line &mdash; line for separating section pages with same background;</li>
+  <li>Content Colors &mdash; second set of colors alternative to default in case the default colors will not be readable on the custom section page background.</li>
+</ul>
+
+<p>After assigning a template for the page &mdash; save it, then you will see additional custom set of options available for this page. Like section background, or setting for the map &mdash; depending on the template.</p>
+
+<p><strong>Slider</strong> is also a page, with special 'Section Slider' template. To edit the slides you need to go to that page edit screen, scroll down and there you will see a slides and other settings.</p>
+
+<p>Just as slider, <strong>Map</strong> is also a page with special template. It works the same way - sroll down to map settings, set the map center coordinates, and then add your locations. You can get coordinates for your map at <a href="http://www.latlong.net/">http://www.latlong.net/</a>.</p>
+
+<br>
+<hr id="posts">
+<br>
+<h2>Blog Posts</h2>
+
+<p>You can create different types of blog posts:</p>
+<ul>
+  <li>Standard, Image - usuall post with a single image and thumbnail;</li>
+  <li>Gallery - post with multiple images, will be shown as a gallery;</li>
+  <li>Video - embedded or self hosted videos;</li>
+  <li>Audio - embedded or self hosted audio.</li>
+</ul>
+
+<p>To create a <strong>video post</strong> you need to add links to the video files (in case with self hosted video), or URL's (in case of embedded) in the special textarea filed. If you adding a link to files (several in different romats) - put each link on a new line. Same rule works for audio posts. Examples:</p>
+
+<p><small>Self hosted video files:</small></p>
+<pre>http://yoursite.com/themes/perfekta/wordpress/wp-content/uploads/2014/01/trailer_iphone.m4v
+http://yoursite.com/themes/perfekta/wordpress/wp-content/uploads/2014/01/trailer_400p.ogg</pre>
+
+<p><small>YouTube link for embedded video:</small></p>
+<pre>http://youtu.be/C-y70ZOSzE0</pre>
+
+<p>To enable poster for video and qudio player - upload a thumbnail to a post.</p>
+
+<p>Supported files formats for video: 'mp4', 'm4v', 'webm', 'ogv', 'wmv', 'flv'. For audio: 'mp3', 'm4a', 'ogg', 'wav', 'wma'.</p>
+
+<p>To create a <strong>gallery post</strong>, just use the gallery button below the visual editor so select or upload images.</p>
+
+<br>
+<hr id="custom-posts">
+<br>
+<h2>Staff and Review Post Types</h2>
+
+<p>You have two custom post types for creating reivew and staff posts. Staff, blog and review posts can be show in a carousel using a special shortcode.</p>
+
+<br>
+<hr id="pb">
+<br>
+<h2>Shortcodes</h2>
+
+<p><img src="dist/img/shortcodes.png" alt=""></p>
+
+<p>You have a lot of shortcodes available that will allow you to create rich pages and sections.</p>
+
+<p>You can see the examples and list of shortcodes on the <a href="http://coffeecreamthemes.com/themes/magicreche/wordpress/shortcodes/">demo site</a>.</p>
+
+<p>For each shortcode you have a special button with icon in the visual editor, by clicking the shortcode button its code will be added to the edit area. Then you only need to edit the attributes according to your needs.</p>
+
+
+<br>
+<hr id="cf7">
+<br>
+<h2>CF7 Contact Forms</h2>
+
+<p><a href="http://contactform7.com/docs/">Plugins documentation.</a></p>
+
+<p>CF7 plugin allow you to easily create advanced tontact forms. Here is the example code for generating the same contact form as on the demo site. Add this code to the <strong>"Form"</strong> section field:</p>
+
+<pre>&#60;div class="row">
+&#60;div class="form-group col-sm-4">[text* name class:form-control placeholder "Name"]&#60;/div>
+&#60;div class="form-group col-sm-4">[text* email class:form-control placeholder "Email"]&#60;/div>
+&#60;div class="form-group col-sm-4">[text* phone class:form-control placeholder "Phone"]&#60;/div>
+&#60;div class="form-group col-sm-12">[textarea message class:form-control placeholder "Message"]&#60;/div>
+&#60;div class="text-center">[submit class:btn class:btn-primary class:btn-lg "SUBMIT"]&#60;/div>
+&#60;p>&nbsp;&#60;/p>
+&#60;/div></pre>
+
+<p>Then to the <strong>"Mail"</strong> section and enter the data below.</p>
+
+<p>Then go to <strong>"Message Body"</strong> textarea and add this code there:</p>
+
+<pre>From: [name] <[email]>
+Phone: [phone]
+
+Message Body:
+[message]</pre>
+
+<p>In the <strong>"To:"</strong> field add your email (sender's email).
+
+<p>In the <strong>"From"</strong> section add:
+
+<pre>[name] <[email]></pre>
+
+<p>Enter the subject you want in the <strong>"Subject:"</strong> field.</p>
+
+<p>This is a sample form configuration.</p>
+
+<p>Note that you need to have very basic knowledge of <a href="http://getbootstrap.com/css/#grid">Bootstrap grid calsses</a> to manage columns for your forms. You can always ask us for a help of support forum.</p>
+
+<p>Its recommended when generating another form element to add a "form-control" CSS class to it, and use placeholders instead of labels.</p>
+
+
+
+<br>
+<hr id="wpml">
+<br>
+<h2>Translating and Adding Several Languages</h2>
+
+<h3>Localization</h3>
+
+<p>To localize the theme (translate to your native languare hardcoded phrases like "Read More" etc.) you can use a "<a href="http://www.wordpress.org/plugins/codestyling-localization/">Codestyling Localization</a>" plugin. Install this plugin first. Plugin documentation located <a href="http://www.code-styling.de/english/development/wordpress-plugin-codestyling-localization-en">here</a>.</p>
+
+<p>The theme only comes with a magicreche.pot / magicreche.po in the magicreche/lang folder - you must rename them to match your desired language set in wp-config.php and translate from there.</p>
+
+<p>Use this plugin to edit the '.po' files in the "Tools > Localization" in WP dashboard.</p>
+
+<p>For example:</p>
+
+<p>Name the language file to match your language code define the in the wp-config.php file - so if you have:</p>
+
+<pre>define('WPLANG', 'pt_BR');</pre>
+
+<p>in there, make sure you've named the po file pt_BR.po .</p>
+
+<p>Also make sure the .pot/.po resides inside of the magicreche/lang folder, once you've done that hit "rescan" in codestyling localization to get all the theme's strings.</p>
+
+<h3>Multilingual Site</h3>
+
+<p>Theme support WPML plugin for multilanguage websites. This is a paid plugin and can be bought of the <a href="http://wpml.org">official website</a>. After <a href="http://wpml.org/documentation/wpml-core-and-add-on-plugins/">installing</a> the plugin, you need to configure it in the "WPML" section of the dashboard. Setup the languages you want to translate to and then go to "Translation Management &raquo; Multilingual Content Setup" go thought list and decide which content you want to translate and which not.</p>
+
+<p>When you activate and setup plugin the language switcher will appear in the header.</p>
+
+<p>As a free alternative to the WPML we recommend to use <a href="http://wordpress.org/plugins/polylang/">Polylang</a> plugin which also will work nicely with the theme.</p>
+
+
+<br><br><br>
+
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
